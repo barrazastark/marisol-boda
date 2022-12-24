@@ -1,0 +1,191 @@
+@import url("./reset.css");
+
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* my styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+
+  .main-image { 
+    /* Set a specific height */
+    min-height: 100vh; 
+    background-image: url("https://www.invitafy.com/Bodas/V2/Premium/images/portada_x1.jpg");
+  }
+
+  .main-image::before,
+  .counter::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .fix-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 90px;
+    z-index: 5;
+  }
+
+  h1 p {
+    text-align: center;
+    z-index: 5;
+  }
+
+  p.fixed-header {
+    font-family: 'Cormorant', serif;
+    font-size: 28px;
+    color: #616161;
+    line-height: 1.2;
+  }
+
+  p.fixed-subheader {
+    font-family: 'Roboto', serif;
+    color: #868686;
+    padding: 3px 0 0;
+    font-weight: 500;
+  }
+
+  .first-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fafafa;
+    text-align: center;
+  }
+
+  .first-block img {
+    height: 3rem;
+  }
+
+  .first-block p {
+    margin: 20px 0;
+    font-family: "Cormorant", serif;
+    font-size: 28px;
+    color: #616161;
+}
+
+.counter {
+    position: relative;
+    color: #F6F6F6;
+    /* Set a specific height */
+    min-height: 513px; 
+    /* The image used */
+    background-image: url("https://www.invitafy.com/Bodas/V2/Premium/images/counter_x1.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.counter div {
+    z-index: 5;
+}
+.counter .counter-one {
+    text-transform: none;
+    font-weight: 300;
+    font-size: 50px;
+    font-family: "Cormorant", serif;
+    margin-bottom: 20px;
+}
+
+.counter .counter-two { 
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+}
+
+.counter .counter-time {
+    position: relative;
+    border: 1px solid white;
+    display: flex;
+    font-size: 48px;
+    font-family: 'Mali', cursive;
+    padding: 20px 30px;
+    justify-content: space-between;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.counter .counter-time::after {
+    content: 'Faltan';
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    font-size: 20px;
+    transform: translateX(-50%);
+    padding: 3px 15px;
+    background-color: white;
+    color: black;
+}
+
+.counter .counter-time > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter .counter-time > div p:first-of-type {
+    font-size: 48px;
+
+}
+
+.counter .counter-time > div p:last-of-type {
+    font-size: 32px;
+}
+
+.historia {
+  padding: 90px;
+  background-image: url(https://miboda.love/endPoint/generador/img/comillas.svg);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position-x: 90px;
+  background-color: #F9F4EF;
+  background-position-y: 49px;
+}
+
+.historia p {
+  font-size: 18px;
+  text-align: center;
+  color: #515151;
+  font-family: 'Poiret One', cursive;
+  margin-bottom: 15px;
+
+}
+
+.historia .propuesta { 
+  font-size: 46px;
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  margin-bottom: 15px;
+  color: #555;
+}
