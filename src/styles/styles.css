@@ -374,4 +374,10 @@ h3.padrinos {
   .padres > div { 
     flex-direction: column;
   }
+  .slider .slide {
+    padding: 50px;
+  }
+  .tns-controls button {
+    display: none;
+  }
 }
