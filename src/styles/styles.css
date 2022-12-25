@@ -380,4 +380,7 @@ h3.padrinos {
   .tns-controls button {
     display: none;
   }
+  .counter .counter-time {
+    flex-direction: column;
+  }
 }
