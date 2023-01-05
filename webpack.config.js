@@ -33,7 +33,7 @@ module.exports = {
                 }),
                 new CopyPlugin({
                         patterns: [
-                          { from: "public/img", to: "img" },
+                          { from: "public/resources", to: "resources" },
                         ],
                       }),
         ],
