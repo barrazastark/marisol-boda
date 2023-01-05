@@ -1,5 +1,9 @@
 @import url("./reset.css");
 
+body {
+  touch-action: manipulation;
+}
+
 .parallax {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -18,7 +22,16 @@
   .main-image { 
     /* Set a specific height */
     min-height: 100vh; 
-    background-image: url("https://www.invitafy.com/Bodas/V2/Premium/images/portada_x1.jpg");
+    background-image: url("../../public/resources/foto-principal.jpeg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position-y: 50px;
+  }
+
+  .main-image::before {
+    width: inherit;
+    height: inherit;
   }
 
   .main-image::before,
@@ -29,7 +42,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.15);
   }
 
   .fix-header {
@@ -99,14 +112,17 @@
     /* Set a specific height */
     min-height: 513px; 
     /* The image used */
-    background-image: url("https://www.invitafy.com/Bodas/V2/Premium/images/counter_x1.jpg");
+    background-image: url("../../public/resources/restaurante.jpeg");
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 40px;
+    justify-content: space-between;
+    padding: 40px 20px;
     box-sizing: border-box;
     z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .counter div {
     z-index: 5;
@@ -130,7 +146,7 @@
     border: 1px solid white;
     display: flex;
     font-size: 48px;
-    font-family: 'Mali', cursive;
+    font-family: 'Roboto', cursive;
     padding: 20px 30px;
     justify-content: space-between;
     width: 60%;
@@ -446,7 +462,7 @@ p.itinerario {
   font-weight: 300;
   font-family: "Cormorant", serif;
   text-align: center;
-  padding: 45px;
+  padding: 25px;
   background-color: #fafafa;
 
 }
@@ -458,21 +474,22 @@ p.itinerario {
 }
 
 .vestimenta-block img {
-  width: 230px;
-  height: 230px;
+  width: 90px;
+  height: 90px;
   border-radius: 100%;
   background: white;
   border: 1px solid white;
 }
 
 .formal-separator {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   font-family: "Cormorant", serif;
   color: #616161;
-  padding: 24px;
+  padding: 24px 30px;
   border-bottom: 1px solid #f3f3f3;
   background-color: #fafafa;
+  list-style: disc;
 }
 
 .bg-white {
@@ -551,6 +568,11 @@ p.itinerario {
 
 @media only screen and (max-width: 768px) {
 
+  .counter {
+    padding: 40px 18px;
+    text-align: center;
+  }
+
  .gracias {
   padding: 30px;
 }
@@ -570,16 +592,16 @@ p.itinerario {
     display: none;
   }
 .counter .counter-time {
-  width: 100%;
+  width: 80%;
   padding: 20px 10px;
 }
 
 .counter .counter-time > div p:first-of-type {
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .counter .counter-time > div p:last-of-type {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 h3.padrinos,
@@ -608,10 +630,7 @@ h3.padrinos,
   font-size: 32px;
 }
 
-.vestimenta-block {
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 
 .vestimenta-block img:last-of-type {
   margin-top: 15px;

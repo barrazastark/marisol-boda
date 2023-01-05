@@ -1,11 +1,9 @@
 import "./styles/styles.css";
 import { tns } from 'tiny-slider'
 
-
-
-window.addEventListener('load', function () {
+document.addEventListener('DOMContentLoaded', function () {
     
-
+    
         // The data/time we want to countdown to
     const countDownDate = new Date("Feb 11, 2023 18:00:00").getTime();
 
@@ -35,6 +33,7 @@ window.addEventListener('load', function () {
         document.getElementById("mins").innerHTML = "00"
         document.getElementById("secs").innerHTML = "00"
     }
+    
     }, 1000);
 
 
@@ -46,3 +45,4 @@ window.addEventListener('load', function () {
       });
 
 });
+
